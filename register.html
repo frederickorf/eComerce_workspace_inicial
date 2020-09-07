@@ -9,15 +9,13 @@
   <title>eMercado - Todo lo que busques está aquí</title>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-
-  
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -51,7 +49,7 @@
   -->
   <form class="form-signin mx-auto pt-4" style="max-width: 305px">
     <div class="text-center p-4">
-        <h2>Inicio Sesion</h2>
+        <h2>Registro</h2>
         <p class="lead">Ingresa tus datos.</p>
     </div>
     <label for="userNick">Usuario</label>
@@ -62,6 +60,14 @@
         <input type="text" id="inputNick" class="form-control" placeholder="" required="" autofocus="">
     </div>
 
+    <label for="userName" class="pt-3">Nombre</label>
+    <div class="input-group">
+        <span class="input-group-text">
+            <i class="fas fa-user"></i>
+        </span>
+        <input type="text" id="inputName" class="form-control" placeholder="" required="">
+    </div>
+
     <label for="userPassword" class="pt-3">Contraseña</label>
     <div class="input-group">
         <span class="input-group-text">
@@ -69,18 +75,21 @@
         </span>
         <input type="password" id="inputPassword" class="form-control" placeholder="" required="">
     </div>
-    <div class="checkbox mb-3 pt-3">
-        <label>
-            <input type="checkbox" id="checkRememberMe"> Recordarme
-        </label>
+
+    <label for="userConfirmPassword" class="pt-3">Confirmar contraseña</label>
+    <div class="input-group">
+        <span class="input-group-text">
+            <i class="fas fa-key"></i>
+        </span>
+        <input type="password" id="inputConfirmPassword" class="form-control" placeholder="" required="">
     </div>
     <div class="checkbox mb-3 pt-3">
         <label id="lblMsg"></label>
     </div>
-    <button id="btnIniciar" type="button" class="btn btn-lg btn-primary btn-block" >Iniciar</button>
+    <button id="btnRegistrarme" class="btn btn-lg btn-primary btn-block" type="button">Registrarme</button>
     <div class="mb-3 pt-3 text-center">
-        <label>¿No tienes una cuenta?</label>
-        <a class="register-btn" href="#register" onclick="location.href = 'register.html'"> Registrate aqui </a>
+        <label>Ya estoy registrado.</label>
+        <a class="register-btn" href="#register" onclick="location.href = 'login.html'"> Iniciar sesion </a>
     </div>
 </form>
   <footer class="text-muted">
@@ -91,7 +100,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
 </body>
 
 </html>

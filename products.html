@@ -21,15 +21,31 @@
         <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
         <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
         <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
+        <ul class="navbar-nav" id="navbarUser">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUser" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" id="btnCerrarSesion" href="#">Cerrar sesion</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </nav>
     <div class="container p-5">
-      <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
+      <!--<div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
         <h4 class="alert-heading">¡A trabajar! :)</h4>
         <p>Esta sección corresponde a: Entrega 1 (Fecha de entrega: 16/08/2020) y Entrega 2 (Fecha de entrega: 30/08/2020).</p>
         <hr>
         <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
       </div>
+      -->
+      <div class="text-center p-4">
+        <h2>Productos</h2>
+        <p class="lead">Verás aquí todas los productos del sitio.</p>
+    </div>
+        <div class="list-group" id="prod-list-container">
     </div>
     <footer class="text-muted bg-light">
       <div class="container">
